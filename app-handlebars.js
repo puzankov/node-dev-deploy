@@ -22,7 +22,7 @@ var data = {
         { name: 'Oregon Coast', price: '$159.95' }
     ],
     specialsUrl: '/january-specials',
-    currencies: [ 'USD', 'GBP', 'BTC', 'UAH' ]
+    currencies: [ 'USD', 'BTC', 'UAH' ]
 };
 
 app.get('/', function (req, res) {
