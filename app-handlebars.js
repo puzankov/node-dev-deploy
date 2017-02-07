@@ -29,6 +29,8 @@ app.get('/', function (req, res) {
     res.render('home', data);
 });
 
-app.listen(5000, function () {
-    console.log('listening on http://localhost:5000');
+app.set('port', (process.env.PORT || 5000));
+
+app.listen(app.get('port'), function () {
+    console.log('listening on http://localhost:'+app.get('port'));
 });
